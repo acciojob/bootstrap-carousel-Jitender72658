@@ -10,63 +10,38 @@
 <body>
 	<!-- the entire body must be written by student -->
 
-<!-- 	A Bootstrap carousel, also known as a slideshow, allows you to showcase multiple images or content in a rotating manner. Here's an example of how to create a basic Bootstrap carousel: -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Slides -->
+		  <div class="carousel-inner">
+		    <div class="carousel-item active first-slide">
+		      <img src="https://images.pexels.com/photos/45853/grey-crowned-crane-bird-crane-animal-45853.jpeg?auto=compress&cs=tinysrgb&w=600" width="800px" alt="Image 1">
+		    </div>
+		    <div class="carousel-item second-slide">
+		      <img src="https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="800px" alt="Image 2">
+		    </div>
+		    <div class="carousel-item third-slide">
+		      <img src="https://images.pexels.com/photos/593655/pexels-photo-593655.jpeg?auto=compress&cs=tinysrgb&w=600" width="800px" alt="Image 3">
+		    </div>
+			  <div class="carousel-item fourth-slide">
+		      <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="800px" height="535px" alt="Image 4">
+		    </div>
+			  <div class="carousel-item fifth-slide">
+		      <img src="https://images.pexels.com/photos/906052/pexels-photo-906052.jpeg?auto=compress&cs=tinysrgb&w=400" width="800px" height="535px alt="Image 5">
+		    </div>
+	      </div>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ul>
-
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://images.pexels.com/photos/45853/grey-crowned-crane-bird-crane-animal-45853.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 1">
-      <div class="carousel-caption">
-        <h3>Slide 1</h3>
-        <p>Slide 1 content goes here...</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 2">
-      <div class="carousel-caption">
-        <h3>Slide 2</h3>
-        <p>Slide 2 content goes here...</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://images.pexels.com/photos/593655/pexels-photo-593655.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
-      <div class="carousel-caption">
-        <h3>Slide 3</h3>
-        <p>Slide 3 content goes here...</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  </a>
-  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </a>
-</div>
-
-<!-- In this example, the carousel is wrapped in a `<div>` element with the `id` set to `myCarousel`. The carousel component consists of three main parts:
-
-1. Indicators: These are represented by the `<ul>` element with the class `carousel-indicators`. Each `<li>` represents a slide and has the `data-target` and `data-slide-to` attributes set to correspond to the target carousel and slide index.
-
-2. Slides: The slides are contained within the `<div>` element with the class `carousel-inner`. Each slide is represented by a `<div>` with the class `carousel-item`. The first slide has the additional class `active` to indicate that it should be displayed initially. Inside each slide, you can place an image `<img>` and add a caption using the `<div>` with the class `carousel-caption`.
-
-3. Controls: The previous and next navigation controls are represented by the `<a>` elements with the classes `carousel-control-prev` and `carousel-control-next`. The `href` attribute should point to the target carousel ID. The controls also include the `<span>` elements with the classes `carousel-control-prev-icon` and `carousel-control-next-icon` for displaying the control icons.
-
-Make sure to include the necessary Bootstrap CSS and JavaScript files in your HTML file as described in the previous examples for the carousel to function correctly.
- -->
+		  <!-- Controls -->
+		  <a class="carousel-control-prev"  type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			   <span class="visually-hidden glyphicon-chevron-left">Previous</span>
+		  </a>
+		  <a class="carousel-control-next"  type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+		    <span class="carousel-control-next-icon glyphicon-chevron-right" aria-hidden="true"></span>
+			   <span class="visually-hidden">Next</span>
+		  </a>
+	</div>
 	<script src ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" ></script>
-    <script type="text/javascript" src="./script.js">
-</script>
+    <script type="text/javascript" src="./script.js"></script>
 
 </body>
 
